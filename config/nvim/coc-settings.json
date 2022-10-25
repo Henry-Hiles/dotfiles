@@ -1,0 +1,14 @@
+{
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact",
+    "typescript.tsx"
+  ],
+  "diagnostic.refreshOnInsertMode": true,
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "Lua.telemetry.enable": false,
+  "sumneko-lua.enableNvimLuaDev": true,
+  "coc.preferences.diagnostic.virtualText": true
+}

@@ -1,0 +1,25 @@
+vim.g.sudo_smart_edit = 1
+vim.opt.shiftwidth = 0
+vim.opt.backup = false
+vim.opt.clipboard = "unnamedplus"
+vim.opt.cmdheight = 1;
+vim.opt.completeopt = { "menuone", "noselect" }
+vim.opt.fileencoding = "utf-8"
+vim.opt.hlsearch = true
+vim.opt.ignorecase = true
+vim.opt.writebackup = false
+vim.opt.updatetime = 300
+vim.opt.undofile = true
+vim.opt.termguicolors = true
+vim.opt.cursorline = true
+vim.opt.mouse = "a"
+vim.opt.smartindent = true
+vim.opt.autoindent = true
+vim.opt.number = true
+vim.opt.relativenumber = false
+vim.opt.signcolumn = "yes"
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
+vim.pumheight = 10
+vim.opt.swapfile = false
+vim.opt.shortmess:append "mnrw"
