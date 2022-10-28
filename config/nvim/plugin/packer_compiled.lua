@@ -169,6 +169,16 @@ _G.packer_plugins = {
     path = "/home/quadradical/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  ["vim-misc"] = {
+    loaded = true,
+    path = "/home/quadradical/.local/share/nvim/site/pack/packer/start/vim-misc",
+    url = "https://github.com/xolox/vim-misc"
+  },
+  ["vim-session"] = {
+    loaded = true,
+    path = "/home/quadradical/.local/share/nvim/site/pack/packer/start/vim-session",
+    url = "https://github.com/xolox/vim-session"
+  },
   ["vim-sleuth"] = {
     loaded = true,
     path = "/home/quadradical/.local/share/nvim/site/pack/packer/start/vim-sleuth",
@@ -177,6 +187,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: indent-blankline.nvim
+time([[Config for indent-blankline.nvim]], true)
+require "config.indent-blankline"
+time([[Config for indent-blankline.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+require "config.comment"
+time([[Config for Comment.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 require "config.treesitter"
@@ -209,14 +227,6 @@ time([[Config for toggleterm.nvim]], false)
 time([[Config for nvim-tree.lua]], true)
 require "config.nvim-tree"
 time([[Config for nvim-tree.lua]], false)
--- Config for: indent-blankline.nvim
-time([[Config for indent-blankline.nvim]], true)
-require "config.indent-blankline"
-time([[Config for indent-blankline.nvim]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-require "config.comment"
-time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

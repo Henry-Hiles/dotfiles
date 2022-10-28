@@ -17,6 +17,7 @@ return packer.startup({ function(use)
         "numToStr/Comment.nvim",
         config = config("comment")
     }
+    use "xolox/vim-session"
 
     -- Theming
     use "navarasu/onedark.nvim"
@@ -44,6 +45,7 @@ return packer.startup({ function(use)
 
     -- Other
     use { 'glepnir/dashboard-nvim', config = config("dashboard") }
+    use "xolox/vim-misc"
     use 'wbthomason/packer.nvim'
 end,
     config = {

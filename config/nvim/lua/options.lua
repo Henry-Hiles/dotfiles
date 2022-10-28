@@ -1,3 +1,5 @@
+vim.g.session_lock_enabled = 0
+vim.g.session_autosave = 'yes'
 vim.g.sudo_smart_edit = 1
 vim.opt.shiftwidth = 0
 vim.opt.backup = false
