@@ -1,11 +1,13 @@
-local keymap = vim.api.nvim_set_keymap
-local expr_opts = { noremap = true, silent = true, expr = true}
+local keymap = vim.keymap.set
+local expr_opts = { replace_keycodes = false, expr = true }
+
+vim.diagnostic.config { virtual_text = true }
 
 keymap(
-    "i",
-    "<Enter>",
-    [[ coc#pum#visible() ? coc#_select_confirm() : "\<Enter>" ]],
-    expr_opts
+   "i",
+   "<Enter>",
+   [[ coc#pum#visible() ? coc#_select_confirm() : "\<Enter>" ]],
+   expr_opts
 )
 
 keymap(

@@ -1,5 +1,4 @@
-local opts = { noremap = true, silent = true}
-local keymap = vim.api.nvim_set_keymap
+local keymap = vim.keymap.set
 
 local nvimtree = require("nvim-tree")
 
@@ -13,4 +12,4 @@ nvimtree.setup({
 })
 
 -- open file tree
-keymap("i", "<C-e>", "<cmd>:NvimTreeToggle<CR>", opts)
+keymap("i", "<A-e>", "<cmd>:NvimTreeToggle<CR>")

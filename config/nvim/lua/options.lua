@@ -1,3 +1,4 @@
+vim.g.novim_mode_use_general_app_shortcuts = 0
 vim.g.session_lock_enabled = 0
 vim.g.session_autosave = 'yes'
 vim.g.sudo_smart_edit = 1

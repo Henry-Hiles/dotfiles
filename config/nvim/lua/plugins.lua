@@ -6,7 +6,7 @@ end
 
 return packer.startup({ function(use)
     -- Utility
-    use 'tombh/novim-mode'
+    use { 'tombh/novim-mode', config = config("novim") }
     use { 'akinsho/toggleterm.nvim', config = config("toggleterm") }
     use 'tpope/vim-sleuth'
     use {
@@ -34,8 +34,7 @@ return packer.startup({ function(use)
     use 'kyazdani42/nvim-web-devicons'
 
     -- Completion/Linting
-    use { "neoclide/coc.nvim", branch = 'release', config = config("coc") }
-    use { "glepnir/lspsaga.nvim", branch = "main", config = config("lspsaga") }
+    use { "neoclide/coc.nvim", config = config("coc"), branch = "release" }
     use {
         'nvim-treesitter/nvim-treesitter',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
