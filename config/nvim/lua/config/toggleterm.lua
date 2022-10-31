@@ -1,2 +1,2 @@
 local toggleterm = require("toggleterm")
-toggleterm.setup { open_mapping = [[<C-Space>]], direction = "float" }
+toggleterm.setup { open_mapping = [[<A-`>]], direction = "float" }

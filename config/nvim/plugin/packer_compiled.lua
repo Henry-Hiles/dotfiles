@@ -144,6 +144,7 @@ _G.packer_plugins = {
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedark.nvim"] = {
+    config = { 'require "config.onedark"' },
     loaded = true,
     path = "/home/quadradical/.local/share/nvim/site/pack/packer/start/onedark.nvim",
     url = "https://github.com/navarasu/onedark.nvim"
@@ -182,46 +183,50 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: coc.nvim
-time([[Config for coc.nvim]], true)
-require "config.coc"
-time([[Config for coc.nvim]], false)
--- Config for: barbar.nvim
-time([[Config for barbar.nvim]], true)
-require "config.barbar"
-time([[Config for barbar.nvim]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
 require "config.nvim-tree"
 time([[Config for nvim-tree.lua]], false)
--- Config for: dashboard-nvim
-time([[Config for dashboard-nvim]], true)
-require "config.dashboard"
-time([[Config for dashboard-nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 require "config.treesitter"
 time([[Config for nvim-treesitter]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-require "config.lualine"
-time([[Config for lualine.nvim]], false)
 -- Config for: indent-blankline.nvim
 time([[Config for indent-blankline.nvim]], true)
 require "config.indent-blankline"
 time([[Config for indent-blankline.nvim]], false)
--- Config for: novim-mode
-time([[Config for novim-mode]], true)
-require "config.novim"
-time([[Config for novim-mode]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-require "config.toggleterm"
-time([[Config for toggleterm.nvim]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 require "config.comment"
 time([[Config for Comment.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+require "config.lualine"
+time([[Config for lualine.nvim]], false)
+-- Config for: barbar.nvim
+time([[Config for barbar.nvim]], true)
+require "config.barbar"
+time([[Config for barbar.nvim]], false)
+-- Config for: onedark.nvim
+time([[Config for onedark.nvim]], true)
+require "config.onedark"
+time([[Config for onedark.nvim]], false)
+-- Config for: novim-mode
+time([[Config for novim-mode]], true)
+require "config.novim"
+time([[Config for novim-mode]], false)
+-- Config for: coc.nvim
+time([[Config for coc.nvim]], true)
+require "config.coc"
+time([[Config for coc.nvim]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+require "config.toggleterm"
+time([[Config for toggleterm.nvim]], false)
+-- Config for: dashboard-nvim
+time([[Config for dashboard-nvim]], true)
+require "config.dashboard"
+time([[Config for dashboard-nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

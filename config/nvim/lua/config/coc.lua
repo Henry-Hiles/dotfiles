@@ -1,8 +1,6 @@
 local keymap = vim.keymap.set
 local expr_opts = { replace_keycodes = false, expr = true }
 
-vim.diagnostic.config { virtual_text = true }
-
 keymap(
    "i",
    "<Enter>",
@@ -23,3 +21,5 @@ keymap(
    [[ coc#pum#visible() ? coc#pum#prev(1) : "\<Up>" ]],
    expr_opts
 )
+
+keymap("i", "<C-Space>", [[coc#refresh()]], expr_opts)

@@ -12,4 +12,4 @@ nvimtree.setup({
 })
 
 -- open file tree
-keymap("i", "<A-e>", "<cmd>:NvimTreeToggle<CR>")
+keymap("i", "<C-e>", [[<cmd>:NvimTreeToggle<CR>]])

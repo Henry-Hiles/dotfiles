@@ -1,7 +1,11 @@
 {
-  "diagnostic.refreshOnInsertMode": true,
-  "coc.preferences.formatOnSaveFiletypes": ["*"],
-  "Lua.telemetry.enable": false,
-  "sumneko-lua.enableNvimLuaDev": true,
-  "diagnostic.virtualText": true
+    "diagnostic.refreshOnInsertMode": true,
+    "coc.preferences.formatOnSave": true,
+    "Lua.telemetry.enable": false,
+    "sumneko-lua.enableNvimLuaDev": true,
+    "diagnostic.virtualText": true,
+    "diagnostic.virtualTextCurrentLineOnly": false,
+    "prettier.tabWidth": 4,
+    "javascript.format.semicolons": "remove",
+    "prettier.semi": false
 }

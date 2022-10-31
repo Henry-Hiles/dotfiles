@@ -1,12 +1,7 @@
 local keymap = vim.keymap.set
-
 keymap("i", "<A-;>", "<C-O>:")
-keymap("i", "<C-q>", vim.cmd.quitall)
+keymap("i", "<C-q>", function() vim.cmd.call "novim_mode#ExitVim()" end)
 keymap("i", "<C-s>", function()
-    local exit = os.execute("test -w " .. vim.fn.expand("%:p"))
-    if exit == 0 then
-        vim.cmd.write()
-    else
-        vim.cmd.SudaWrite()
-    end
+    local success = pcall(vim.cmd.update)
+    if not success then vim.cmd.SudaWrite() end
 end)

@@ -1,6 +1,6 @@
 local packer = require("packer")
 
-function config(name)
+local function config(name)
     return string.format('require "config.%s"', name)
 end
 
@@ -20,7 +20,7 @@ return packer.startup({ function(use)
     use "xolox/vim-session"
 
     -- Theming
-    use "navarasu/onedark.nvim"
+    use { "navarasu/onedark.nvim", config = config("onedark") }
     use { 'lukas-reineke/indent-blankline.nvim', config = config("indent-blankline") }
     use {
         'nvim-lualine/lualine.nvim',
