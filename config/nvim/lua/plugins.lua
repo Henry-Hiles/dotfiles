@@ -13,10 +13,6 @@ return packer.startup({ function(use)
         'romgrk/barbar.nvim',
         requires = { 'kyazdani42/nvim-web-devicons' }, config = config("barbar")
     }
-    use {
-        "numToStr/Comment.nvim",
-        config = config("comment")
-    }
     use "xolox/vim-session"
 
     -- Theming

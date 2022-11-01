@@ -74,12 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["Comment.nvim"] = {
-    config = { 'require "config.comment"' },
-    loaded = true,
-    path = "/home/quadradical/.local/share/nvim/site/pack/packer/start/Comment.nvim",
-    url = "https://github.com/numToStr/Comment.nvim"
-  },
   ["barbar.nvim"] = {
     config = { 'require "config.barbar"' },
     loaded = true,
@@ -187,6 +181,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for nvim-tree.lua]], true)
 require "config.nvim-tree"
 time([[Config for nvim-tree.lua]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+require "config.toggleterm"
+time([[Config for toggleterm.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 require "config.treesitter"
@@ -195,10 +193,6 @@ time([[Config for nvim-treesitter]], false)
 time([[Config for indent-blankline.nvim]], true)
 require "config.indent-blankline"
 time([[Config for indent-blankline.nvim]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-require "config.comment"
-time([[Config for Comment.nvim]], false)
 -- Config for: lualine.nvim
 time([[Config for lualine.nvim]], true)
 require "config.lualine"
@@ -219,10 +213,6 @@ time([[Config for novim-mode]], false)
 time([[Config for coc.nvim]], true)
 require "config.coc"
 time([[Config for coc.nvim]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-require "config.toggleterm"
-time([[Config for toggleterm.nvim]], false)
 -- Config for: dashboard-nvim
 time([[Config for dashboard-nvim]], true)
 require "config.dashboard"

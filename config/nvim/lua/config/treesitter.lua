@@ -1,4 +1,4 @@
-require("nvim-treesitter.configs").setup({
+require("nvim-treesitter.configs").setup {
   rainbow = {
     enable = true,
     extended_mode = true,
@@ -22,10 +22,6 @@ require("nvim-treesitter.configs").setup({
       node_decremental = "<TAB>",
     },
   },
-})
--- Setup treesitter
-local ts = require("nvim-treesitter.configs")
-ts.setup({
   ensure_installed = {
     "c",
     "css",
@@ -41,5 +37,5 @@ ts.setup({
     "vim",
     "toml",
   },
-  highlight = { enable = true },
-})
+  highlight = { enable = true }
+}
