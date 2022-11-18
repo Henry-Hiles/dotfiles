@@ -20,4 +20,3 @@ git clone --depth=1 https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $PLU
 git clone --depth=1 https://github.com/chrissicool/zsh-256color $PLUGINS/zsh-256color
 git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions $PLUGINS/zsh-autosuggestions
 git clone --depth=1 https://github.com/3v1n0/zsh-bash-completions-fallback $PLUGINS/zsh-bash-completions-fallback
-

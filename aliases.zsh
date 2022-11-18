@@ -1,3 +1,5 @@
+alias sudo=doas
+alias doas="doas "
 alias cat=bat
 alias ls='exa -a --color=always --group-directories-first --icons'
 alias ping="prettyping"
