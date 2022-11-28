@@ -24,6 +24,11 @@ export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 #
+# Fine-the-command
+#
+source /usr/share/doc/find-the-command/ftc.zsh quiet
+
+#
 # P10K
 #
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
