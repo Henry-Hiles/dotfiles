@@ -1,3 +1,5 @@
+#!/bin/sh
+
 xdg-user-dirs-update
 PLUGINS=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins
 THEMES=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes
