@@ -50,7 +50,7 @@
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
-        "on-click": "kitty -- sudo powertop",
+        "on-click": "kitty -- pkexec powertop",
         "format-icons": [
             "",
             "",
