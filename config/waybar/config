@@ -35,7 +35,8 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "kitty -- auto-cpufreq --stats"
     },
     "memory": {
         "format": "{}% "
@@ -49,7 +50,7 @@
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
-        "on-click": "kitty -- auto-cpufreq --stats",
+        "on-click": "kitty -- sudo powertop",
         "format-icons": [
             "",
             "",
